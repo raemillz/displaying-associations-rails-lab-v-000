@@ -2,5 +2,5 @@
   <ul>
     <%= @songs.each do |song| %>
     <li><%= song.artist.name %> - <%= link_to song.title, song_path(song.id) %></li>
+    <% end %>
   </ul>
-    <%end%>
